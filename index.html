@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Odin's Desk — Early bird</title>
+  <meta name="description" content="Odin's Desk is a home-desk AI box you can text and talk to — powered by Fabric. Join the early bird list for the first 20 units." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Odin's Desk</div>
+    <div class="tag">Powered by Fabric</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Home-desk AI · First 20 units</p>
+      <h1>Your desk. Owned AI. Always on.</h1>
+      <p class="lede">
+        Odin's Desk is a screen-first AI box for your desk — text it, talk to it, keep Fabric running locally-minded with human approval gates.
+        Not another cloud toy. A node that lives where you work.
+      </p>
+      <form class="waitlist" id="waitlist" action="#" method="post">
+        <label class="sr" for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
+        <button type="submit">Join early bird</button>
+      </form>
+      <p class="fine">Pilot batch targeting ~20 units. No spam. Ship dates announced only when the build is real.</p>
+    </section>
+
+    <section class="grid">
+      <article>
+        <h2>Text + talk</h2>
+        <p>Message the box from your phone or speak at the desk. Same Fabric brain, calm screen UI.</p>
+      </article>
+      <article>
+        <h2>Fabric on the desk</h2>
+        <p>Profiles, skills, and daily steer — the same company OS pattern, tuned for a home desk operator.</p>
+      </article>
+      <article>
+        <h2>Approval gates</h2>
+        <p>Sensitive actions stay behind human approval. Built for trust, not autopilot chaos.</p>
+      </article>
+    </section>
+
+    <section class="pilot">
+      <h2>Early bird pilot</h2>
+      <ul>
+        <li>First production-minded batch sized around 20 units</li>
+        <li>Quiet fanless-class mini PC core + desk screen</li>
+        <li>You sign in with your own AI accounts (or company-managed keys) — we do not ship shared passwords</li>
+        <li>Kallax-fit furniture shell is on the roadmap after the working desk unit</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Odin's Desk · Prime Odin</p>
+    <p class="fine">Promise-safe: features and timing may change until the pilot build is locked.</p>
+  </footer>
+
+  <script>
+    document.getElementById('waitlist').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('email').value.trim();
+      if (!email) return;
+      alert('Thanks — early bird interest recorded for ' + email + '. Wiring live signup once odinsdesk.com is live.');
+    });
+  </script>
+</body>
+</html>
