@@ -3,70 +3,233 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Odin's Desk — Early bird</title>
-  <meta name="description" content="Odin's Desk is a home-desk AI box you can text and talk to — powered by Fabric. Join the early bird list for the first 20 units." />
+  <title>Odin's Desk — $50 deposit for founding units</title>
+  <meta name="description" content="Odin's Desk is a home-desk AI cube with a screen — text it, talk to it, powered by Fabric. Your accounts only. Reserve interest with a $50 refundable deposit for the ~20-unit pilot." />
+  <meta name="theme-color" content="#0c0b09" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="top">
-    <div class="brand">Odin's Desk</div>
-    <div class="tag">Powered by Fabric</div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Odin's Desk</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#trust">Trust</a>
+        <a href="#faq">FAQ</a>
+        <a href="pricing.html">Details</a>
+      </nav>
+      <a class="btn btn-sm btn-primary" href="#deposit">$50 deposit</a>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Home-desk AI · First 20 units</p>
-      <h1>Your desk. Owned AI. Always on.</h1>
-      <p class="lede">
-        Odin's Desk is a screen-first AI box for your desk — text it, talk to it, keep Fabric running locally-minded with human approval gates.
-        Not another cloud toy. A node that lives where you work.
-      </p>
-      <form class="waitlist" id="waitlist" action="#" method="post">
-        <label class="sr" for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
-        <button type="submit">Join early bird</button>
-      </form>
-      <p class="fine">Pilot batch targeting ~20 units. No spam. Ship dates announced only when the build is real.</p>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Founding pilot · ~20 units</p>
+        <h1>A desk appliance for AI you actually own.</h1>
+        <p class="lede">
+          Odin's Desk is a home-desk AI cube with a screen — text it, talk to it, powered by Fabric.
+          You bring your own accounts and API keys. No shared ChatGPT or Grok logins. Ever.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#deposit">$50 deposit to show interest</a>
+          <a class="btn btn-ghost" href="#waitlist">Join the waitlist</a>
+        </div>
+        <p class="fine">Deposit applies toward your unit. Refundable if we don't ship or you cancel before production lock.</p>
+      </div>
+      <figure class="hero-media">
+        <img
+          src="assets/hero-desk.jpg"
+          alt="Odin's Desk cube with screen on a wooden desk, showing focus and inbox widgets"
+          width="1200"
+          height="900"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
     </section>
 
-    <section class="grid">
-      <article>
-        <h2>Text + talk</h2>
-        <p>Message the box from your phone or speak at the desk. Same Fabric brain, calm screen UI.</p>
-      </article>
-      <article>
-        <h2>Fabric on the desk</h2>
-        <p>Profiles, skills, and daily steer — the same company OS pattern, tuned for a home desk operator.</p>
-      </article>
-      <article>
-        <h2>Approval gates</h2>
-        <p>Sensitive actions stay behind human approval. Built for trust, not autopilot chaos.</p>
-      </article>
+    <section id="product" class="section wrap">
+      <div class="section-head">
+        <h2>What you get</h2>
+        <p>A calm, always-there presence on your desk — not another tab fighting for attention.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Text + talk</h3>
+          <p>Message the cube from your phone or speak at the desk. Same Fabric brain, one clear screen.</p>
+        </article>
+        <article class="card">
+          <h3>Powered by Fabric</h3>
+          <p>Profiles, skills, and daily steer — company-OS patterns tuned for a home desk operator.</p>
+        </article>
+        <article class="card">
+          <h3>Your accounts only</h3>
+          <p>Buyer-owned API keys and logins. We never ship shared ChatGPT or Grok credentials.</p>
+        </article>
+        <article class="card">
+          <h3>Human approval gates</h3>
+          <p>Sensitive actions stay behind your say-so. Built for trust, not autopilot chaos.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="pilot">
-      <h2>Early bird pilot</h2>
-      <ul>
-        <li>First production-minded batch sized around 20 units</li>
-        <li>Quiet fanless-class mini PC core + desk screen</li>
-        <li>You sign in with your own AI accounts (or company-managed keys) — we do not ship shared passwords</li>
-        <li>Kallax-fit furniture shell is on the roadmap after the working desk unit</li>
-      </ul>
+    <section id="pricing" class="section wrap">
+      <div class="section-head">
+        <h2>Pricing</h2>
+        <p>Simple interest signal now. Final pilot pricing locked when the build is real.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card featured" id="deposit">
+          <p class="price-label">Early interest</p>
+          <p class="price-amount">$50 <span>deposit</span></p>
+          <ul>
+            <li>Shows serious interest for a founding unit</li>
+            <li>Applies toward your first Odin's Desk</li>
+            <li>Refundable if we don't ship, or if you cancel before production lock</li>
+          </ul>
+          <form class="deposit-form" id="deposit-form" action="mailto:waitlist@odinsdesk.com" method="post" enctype="text/plain">
+            <input type="hidden" name="subject" value="Odin's Desk — $50 deposit interest" />
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" required autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+            </label>
+            <button class="btn btn-primary btn-block" type="submit">Reserve with $50 deposit</button>
+          </form>
+          <p class="fine">Opens your email client with a ready message. Stripe Checkout wiring comes next — no card is charged on this page.</p>
+        </article>
+        <article class="price-card">
+          <p class="price-label">Estimated pilot price</p>
+          <p class="price-amount estimate" contenteditable="true" spellcheck="false">$499–$799</p>
+          <p class="badge">Estimate · editable placeholder</p>
+          <ul>
+            <li>Target range for the ~20 founding units</li>
+            <li>Not a final quote — hardware and BOM still settling</li>
+            <li>Your $50 deposit credits toward the locked pilot price</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="pricing.html">See pricing details</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="trust" class="section wrap">
+      <div class="section-head">
+        <h2>Trust, plainly</h2>
+        <p>Small pilot. Honest refunds. Privacy you can verify.</p>
+      </div>
+      <div class="trust-grid">
+        <article class="trust-item">
+          <h3>20 founding units</h3>
+          <p>Limited pilot sized around twenty desks. We're not inventing a scarcity counter — the batch is simply small.</p>
+        </article>
+        <article class="trust-item">
+          <h3>Privacy by design</h3>
+          <p>You own the accounts and keys. Odin's Desk is built to run with buyer-controlled credentials, not shared vendor logins.</p>
+        </article>
+        <article class="trust-item">
+          <h3>Refund stub</h3>
+          <p>Deposit refundable if we don't ship, or if you cancel before production lock. After lock, terms follow the pilot agreement we send before charge of the balance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="waitlist" class="section wrap waitlist-section">
+      <div class="waitlist-panel">
+        <div>
+          <h2>Not ready to deposit?</h2>
+          <p>Join the waitlist for build notes and pilot timing. No spam — only when something is real.</p>
+        </div>
+        <form class="waitlist-form" id="waitlist-form" action="mailto:waitlist@odinsdesk.com" method="post" enctype="text/plain">
+          <input type="hidden" name="subject" value="Odin's Desk — waitlist" />
+          <label class="sr" for="waitlist-email">Email</label>
+          <input id="waitlist-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+          <button class="btn btn-ghost" type="submit">Join waitlist</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="section wrap">
+      <div class="section-head">
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>What is Odin's Desk?</summary>
+          <p>A home-desk AI cube with a screen. Text it, talk to it, and keep Fabric as the operating layer — built as a desk appliance, not a generic cloud chatbot.</p>
+        </details>
+        <details>
+          <summary>Whose AI accounts do I use?</summary>
+          <p>Yours. Buyer-owned accounts and API keys only. We do not provide or share ChatGPT, Grok, or other vendor logins.</p>
+        </details>
+        <details>
+          <summary>What does the $50 deposit do?</summary>
+          <p>It signals interest for a founding unit and applies toward your purchase. It is refundable if we don't ship or you cancel before production lock.</p>
+        </details>
+        <details>
+          <summary>Is the $499–$799 figure final?</summary>
+          <p>No. That range is an editable estimate for planning. Final pilot pricing is confirmed when the build and BOM lock.</p>
+        </details>
+        <details>
+          <summary>How many units in the pilot?</summary>
+          <p>About twenty founding units. Small on purpose so we can support early buyers well.</p>
+        </details>
+        <details>
+          <summary>When do I pay the rest?</summary>
+          <p>After production lock and a clear pilot agreement. This page does not process payments yet — the deposit form opens email so we can follow up with Stripe Checkout next.</p>
+        </details>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Odin's Desk · Prime Odin</p>
-    <p class="fine">Promise-safe: features and timing may change until the pilot build is locked.</p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="brand">Odin's Desk</p>
+        <p class="fine">Home-desk AI cube · Powered by Fabric · Buyer-owned accounts</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@odinsdesk.com">hello@odinsdesk.com</a>
+        <a href="mailto:waitlist@odinsdesk.com">waitlist@odinsdesk.com</a>
+        <a href="mailto:support@odinsdesk.com">support@odinsdesk.com</a>
+      </div>
+    </div>
+    <div class="wrap fine footer-note">
+      Promise-safe: features, timing, and final pricing may change until the pilot build is locked. No fake testimonials. No invented metrics.
+    </div>
   </footer>
 
   <script>
-    document.getElementById('waitlist').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = document.getElementById('email').value.trim();
-      if (!email) return;
-      alert('Thanks — early bird interest recorded for ' + email + '. Wiring live signup once odinsdesk.com is live.');
-    });
+    (function () {
+      function mailForm(form, kind) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var nameEl = form.querySelector('[name="name"]');
+          var emailEl = form.querySelector('[name="email"]');
+          var name = nameEl ? nameEl.value.trim() : '';
+          var email = emailEl ? emailEl.value.trim() : '';
+          if (!email) return;
+          var subject = kind === 'deposit'
+            ? "Odin's Desk — $50 deposit interest"
+            : "Odin's Desk — waitlist";
+          var body = kind === 'deposit'
+            ? 'Name: ' + name + '\nEmail: ' + email + '\n\nI want to reserve interest with a $50 deposit toward a founding Odin\'s Desk unit.\nPlease send Stripe Checkout / next steps.\n'
+            : 'Email: ' + email + '\n\nPlease add me to the Odin\'s Desk waitlist.\n';
+          window.location.href = 'mailto:waitlist@odinsdesk.com?subject=' +
+            encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        });
+      }
+      var deposit = document.getElementById('deposit-form');
+      var waitlist = document.getElementById('waitlist-form');
+      if (deposit) mailForm(deposit, 'deposit');
+      if (waitlist) mailForm(waitlist, 'waitlist');
+    })();
   </script>
 </body>
 </html>
